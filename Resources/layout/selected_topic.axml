@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/quizImage"
+        android:layout_height="130dp"
+        android:layout_width="130dp"
+        android:src="@drawable/history"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+    />
+
+      <TextView
+    android:id="@+id/quizTopicText"
+    android:text="Topic"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center"/>
+
+    
+    <TextView
+    android:id="@+id/quizDescriptionText"
+    android:textSize="15sp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to "
+    />
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+		<Button
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="50dp"
+			android:id="@+id/startQuizButton"
+			android:text="Start Quiz"
+            android:textStyle="bold"
+			android:layout_height="40dp"
+			android:layout_width="200dp"
+            android:textColor="@android:color/white"
+			android:background="@drawable/roundbutton"
+        />
+    </RelativeLayout>
+</LinearLayout>
