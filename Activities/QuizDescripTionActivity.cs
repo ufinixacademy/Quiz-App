@@ -59,32 +59,34 @@ namespace Quiz_App.Activities
         int GetImage(string topic)
         {
             int imageInt = 0;
-
-            if(topic == "History")
+            
+            
+            switch(topic)
             {
-                imageInt = Resource.Drawable.history;
+                case "History":
+                    imageInt = Resource.Drawable.history;
+                    break;
+                    
+                case "Geography":
+                    imageInt = Resource.Drawable.geography;
+                    break;
+                    
+                case "Space":
+                    imageInt = Resource.Drawable.space;
+                    break;
+                    
+                case "Programming":
+                    imageInt = Resource.Drawable.programming;
+                    break;
+                    
+                case "Engineering":
+                    imageInt = Resource.Drawable.engineering;
+                    break;
+                    
+                case "Business":
+                    imageInt = Resource.Drawable.business;
+                    break;
             }
-            else if(topic == "Geography")
-            {
-                imageInt = Resource.Drawable.geography;
-            }
-            else if(topic == "Space")
-            {
-                imageInt = Resource.Drawable.space;
-            }
-            else if(topic == "Programming")
-            {
-                imageInt = Resource.Drawable.programming;
-            }
-            else if (topic == "Engineering")
-            {
-                imageInt = Resource.Drawable.engineering;
-            }
-            else if (topic == "Business")
-            {
-                imageInt = Resource.Drawable.business;
-            }
-
             return imageInt;
         }
     }
